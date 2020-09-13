@@ -1,0 +1,21 @@
+{
+	"name": "Youtube related deleter",
+	"description" : "Base Level Extension",
+	"version": "1.0",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.youtube.com/*"
+			],
+			"run_at": "document_idle",
+			"js": ["index.js"]
+		}
+	],
+	"permissions": [
+		"tabs", "http://*/*", "https://*/*"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
