@@ -1,0 +1,18 @@
+import jquery in index.js
+https://stackoverflow.com/questions/1140402/how-to-add-jquery-in-js-file
+https://stackoverflow.com/questions/21317476/how-to-use-jquery-in-chrome-extension
+
+1.
+use ajax stop
+$(document).ajaxStop(function() {
+	// set #related display:none
+});
+
+
+2.
+simply pass root directory from background.js to index.js
+
+and check state value
+
+3.
+stop playing next video

@@ -13,9 +13,11 @@
 		}
 	],
 	"permissions": [
+		"background",
 		"tabs", "http://*/*", "https://*/*"
 	],
 	"background": {
-		"scripts": ["background.js"]
+		"scripts": ["background.js"],
+		"persistent": false
 	}
 }
